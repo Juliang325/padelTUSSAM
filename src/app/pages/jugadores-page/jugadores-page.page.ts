@@ -31,7 +31,11 @@ export class JugadoresPagePage implements OnInit {
     this.showLoading();
     //Nos subscribimos al observable mandado desde el servicio
     this.serviJugadores.getJugadores()
-      .subscribe(jugadores => this.jugadores = jugadores);
+      .subscribe(jugadores => {
+        // Ordenar los jugadores por puntos de forma descendente
+        jugadores.sort((a, b) => b.puntos - a.puntos);
+        this.jugadores = jugadores;
+      });
   }
 
   async showLoading() {

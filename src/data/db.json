@@ -1,8 +1,60 @@
 {
-    "jugadores": [
-      { "id": 1, "nombre": "Julian", "apellido":"Garrido", "puntos":0},
-      { "id": 2, "nombre": "Fran", "apellido":"Garrido", "puntos":0},
-      { "id": 3, "nombre": "Pablo", "apellido":"Arenas", "puntos":0},
-      { "id": 4, "nombre": "Manuel", "apellido":"Casado", "puntos":0}
-    ]
+  "jugadores": [
+    { "id": 1, "nombre": "Julian", "apellido": "Garrido", "puntos": 2 },
+    { "id": 2, "nombre": "Fran", "apellido": "Garrido", "puntos": 5 },
+    { "id": 3, "nombre": "Pablo", "apellido": "Arenas", "puntos": 4 },
+    { "id": 4, "nombre": "Manuel", "apellido": "Casado", "puntos": 10 },
+    { "id": 5, "nombre": "Luis", "apellido": "López", "puntos": 8 },
+    { "id": 6, "nombre": "Ana", "apellido": "Martínez", "puntos": 3 },
+    { "id": 7, "nombre": "Elena", "apellido": "Sánchez", "puntos": 6 },
+    { "id": 8, "nombre": "Carlos", "apellido": "Gómez", "puntos": 7 },
+    { "id": 9, "nombre": "Sara", "apellido": "Rodríguez", "puntos": 9 },
+    { "id": 10, "nombre": "Javier", "apellido": "Ruiz", "puntos": 12 },
+    { "id": 11, "nombre": "Laura", "apellido": "Pérez", "puntos": 11 },
+    { "id": 12, "nombre": "Diego", "apellido": "Hernández", "puntos": 15 },
+    { "id": 13, "nombre": "Marta", "apellido": "Díaz", "puntos": 13 },
+    { "id": 14, "nombre": "Pedro", "apellido": "García", "puntos": 18 },
+    { "id": 15, "nombre": "Lucía", "apellido": "Fernández", "puntos": 16 },
+    { "id": 16, "nombre": "Roberto", "apellido": "Sanz", "puntos": 14 },
+    { "id": 17, "nombre": "Eva", "apellido": "Muñoz", "puntos": 20 },
+    { "id": 18, "nombre": "Marcos", "apellido": "Jiménez", "puntos": 17 },
+    { "id": 19, "nombre": "Isabel", "apellido": "Vega", "puntos": 22 },
+    { "id": 20, "nombre": "Antonio", "apellido": "Ortega", "puntos": 19 },
+    { "id": 21, "nombre": "Carmen", "apellido": "Navarro", "puntos": 25 },
+    { "id": 22, "nombre": "Alejandro", "apellido": "Molina", "puntos": 23 },
+    { "id": 23, "nombre": "Raquel", "apellido": "Suárez", "puntos": 28 },
+    { "id": 24, "nombre": "Jorge", "apellido": "Ramos", "puntos": 26 },
+    { "id": 25, "nombre": "María", "apellido": "Iglesias", "puntos": 30 },
+    { "id": 26, "nombre": "Daniel", "apellido": "Serrano", "puntos": 29 },
+    { "id": 27, "nombre": "Natalia", "apellido": "Lorenzo", "puntos": 35 },
+    { "id": 28, "nombre": "Gonzalo", "apellido": "Herrera", "puntos": 33 },
+    { "id": 29, "nombre": "Rocío", "apellido": "Giménez", "puntos": 40 },
+    { "id": 30, "nombre": "Andrés", "apellido": "Crespo", "puntos": 37 },
+    { "id": 31, "nombre": "Inés", "apellido": "Ortiz", "puntos": 45 },
+    { "id": 32, "nombre": "Alberto", "apellido": "Fuentes", "puntos": 42 }
+  ],
+  "partidos": [
+    {
+      "id":1,
+      "resultado": "2:1",
+      "recinto": "IMD San Jerónimo",
+      "jugadores": [
+        { "id": 1, "nombre": "Julian", "apellido": "Garrido", "puntos": 2 },
+        { "id": 2, "nombre": "Fran", "apellido": "Garrido", "puntos": 5 },
+        { "id": 7, "nombre": "Elena", "apellido": "Sánchez", "puntos": 6 },
+        { "id": 8, "nombre": "Carlos", "apellido": "Gómez", "puntos": 7 }
+      ]
+    },
+    {
+      "id":2,
+      "resultado": "0:2",
+      "recinto": "IMD Pinomontano",
+      "jugadores": [
+        { "id": 29, "nombre": "Rocío", "apellido": "Giménez", "puntos": 40 },
+        { "id": 30, "nombre": "Andrés", "apellido": "Crespo", "puntos": 37 },
+        { "id": 31, "nombre": "Inés", "apellido": "Ortiz", "puntos": 45 },
+        { "id": 32, "nombre": "Alberto", "apellido": "Fuentes", "puntos": 42 }
+      ]
+    }
+  ]
 }
