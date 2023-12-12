@@ -1,0 +1,8 @@
+{
+    "jugadores": [
+      { "id": 1, "nombre": "Julian", "apellido":"Garrido", "puntos":0},
+      { "id": 2, "nombre": "Fran", "apellido":"Garrido", "puntos":0},
+      { "id": 3, "nombre": "Pablo", "apellido":"Arenas", "puntos":0},
+      { "id": 4, "nombre": "Manuel", "apellido":"Casado", "puntos":0}
+    ]
+}

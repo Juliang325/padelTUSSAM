@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Hola</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <!--Vamos a utilizar ion- grid para organizar los distintos elementos 
+      y el *ngIf lo utilizamos para que muestre el contenido si estan definidas las variables-->
+  <ion-grid *ngIf="jugadores != undefined">
+    <ion-row>
+      <!-- Definimos la lista mediante un ngFor -->
+      <ion-col *ngFor="let jugador of jugadores" size-lg="6" size-md="6" size-sm="12" size="12">
+        <!-- Al hacer click en la carta nos dirige a la pagina de detalle -->
+        <ion-card [routerLink]="['/detalle/', jugador.id]" class="user-card">
+          <!-- <img alt="Silhouette of mountains" src="./../../assets/covers/{{libro.isbn}}.jpg" /> -->
+          <ion-card-header>
+            <ion-card-title>{{jugador.nombre}}</ion-card-title>
+          </ion-card-header>
+      
+          <ion-card-content>
+            <ion-list>
+              <ion-item>
+                <ion-label><strong>Apellido: </strong>  {{jugador.apellido}}</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label><strong>Puntos: </strong> {{jugador.puntos}}</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
