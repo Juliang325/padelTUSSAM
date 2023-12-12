@@ -1,0 +1,7 @@
+{
+  "name": "padelTUSSAM",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
