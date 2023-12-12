@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadingController } from '@ionic/angular';
 import { Jugador } from 'src/app/interfaces/jugador';
 import { JugadorserviceService } from 'src/app/services/jugadorservice.service';
 
@@ -13,7 +14,9 @@ export class JugadoresPagePage implements OnInit {
   jugadores:Jugador[]
 
   //Introducimos en el constructor el servicio para poder utilizarlo
-  constructor(private serviJugadores:JugadorserviceService) { 
+  constructor(
+    private serviJugadores:JugadorserviceService,
+    private loadingCtrl: LoadingController) { 
     //Inicializamos a vacio la lista
     this.jugadores = []
   }
@@ -24,9 +27,26 @@ export class JugadoresPagePage implements OnInit {
 
   //Creamos una funcion que recoja los datos
   getJugadores(){
+    //Antes de cargar los jugadores se mostrará el simbolo de espera
+    this.showLoading();
     //Nos subscribimos al observable mandado desde el servicio
     this.serviJugadores.getJugadores()
       .subscribe(jugadores => this.jugadores = jugadores);
   }
 
+  async showLoading() {
+    const loading = await this.loadingCtrl.create({
+      message: 'cargando jugadores...',
+    });
+ 
+ 
+    loading.present();
+    setTimeout(() => {
+      loading.dismiss();
+    }, 2000); // Duración de dos segundos en milisegundos
+  }
+ 
+
 }
+
+

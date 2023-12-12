@@ -6,7 +6,7 @@ import { Jugador } from './../app/interfaces/jugador';
 export const environment = {
   production: false,
   apiURL: "http://localhost:3000",
-  jugadores : "/jugadores"
+  jugadores : "/jugadores/"
 };
 
 /*

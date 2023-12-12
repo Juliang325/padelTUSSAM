@@ -1,13 +1,20 @@
 <ion-header [translucent]="true">
+  
   <ion-toolbar>
-    <ion-title>detallePage</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Jugador</ion-title>
   </ion-toolbar>
-</ion-header>
 
+</ion-header>
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">detallePage</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{jugador.nombre}} {{jugador.apellido}}</ion-card-title>
+    </ion-card-header>
+    
+  </ion-card>
+
 </ion-content>
