@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'detalle-page/:id',
     loadChildren: () => import('./pages/detalle-page/detalle-page.module').then( m => m.DetallePagePageModule)
   },
+  {
+    path: 'partidospage',
+    loadChildren: () => import('./pages/partidospage/partidospage.module').then( m => m.PartidospagePageModule)
+  },
 ];
 
 @NgModule({
